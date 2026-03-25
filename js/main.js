@@ -44,24 +44,24 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ── LEAF PARTICLES ── */
-  const container = document.getElementById('particles');
-  if (container) {
-    const chars = ['🍃','🌿','☘️','🍀','🌱','✨','🌸','🌺'];
-    const spawn = () => {
-      const el = document.createElement('div');
-      el.className = 'leaf-p';
-      el.textContent = chars[Math.floor(Math.random() * chars.length)];
-      el.style.left = Math.random() * 100 + 'vw';
-      el.style.fontSize = (0.7 + Math.random() * 1.1) + 'rem';
-      const dur = 9 + Math.random() * 12;
-      el.style.animationDuration = dur + 's';
-      el.style.animationDelay = (Math.random() * 3) + 's';
-      container.appendChild(el);
-      setTimeout(() => el.remove(), (dur + 3) * 1000);
-    };
-    for (let i = 0; i < 6; i++) setTimeout(spawn, i * 300);
-    setInterval(spawn, 900);
-  }
+  // const container = document.getElementById('particles');
+  // if (container) {
+  //   const chars = ['🍃','🌿','☘️','🍀','🌱','✨','🌸','🌺'];
+  //   const spawn = () => {
+  //     const el = document.createElement('div');
+  //     el.className = 'leaf-p';
+  //     el.textContent = chars[Math.floor(Math.random() * chars.length)];
+  //     el.style.left = Math.random() * 100 + 'vw';
+  //     el.style.fontSize = (0.7 + Math.random() * 1.1) + 'rem';
+  //     const dur = 9 + Math.random() * 12;
+  //     el.style.animationDuration = dur + 's';
+  //     el.style.animationDelay = (Math.random() * 3) + 's';
+  //     container.appendChild(el);
+  //     setTimeout(() => el.remove(), (dur + 3) * 1000);
+  //   };
+  //   for (let i = 0; i < 6; i++) setTimeout(spawn, i * 300);
+  //   setInterval(spawn, 900);
+  // }
 
   /* ── NAV SCROLL ── */
   const navWrap = document.querySelector('.nav-wrap');
