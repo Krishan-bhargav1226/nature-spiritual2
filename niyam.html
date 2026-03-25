@@ -72,388 +72,258 @@
   </div>
 </div>
 
-<!-- ══ INTRO ══ -->
-<!-- <section class="py-section-sm">
-  <div class="container">
-    <div class="niyam-intro reveal">
-      <div class="ni-icon">🌳</div>
-      <div class="ni-text">
-        <h2>भाग – 1 - परिचय</h2>
-        <p>हम शरीर, मन और आत्मा का संगम हैं। शरीर और मन को झुकाने हम चेतना, आत्मा के तल पर आ सकते हैं और खुद को जान सकते हैं। और दुखों से पार हो सकते हैं। अब सवाल यह उठता है कि शरीर और मन को कहां झुकाएं। शरीर और मन को हम वहां झुका सकते है जहां हम चाह कर भी कुछ भी ना दे सकें और हमारा अंहकार पैदा ना हो सके। जैसे सुरज, चांद, पृथ्वी, प्रकृति, माता–पिता, यह सब सदैव हमें देते ही रहते हैं, पर बदले में हम उन्हें कुछ भी नही दे सकते।</p>
-      </div>
+<style>
+  .bhaag-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+  }
+
+  .glass-card-dark {
+    background: linear-gradient(135deg, rgba(15, 61, 46, 0.9), rgba(20, 92, 67, 0.9));
+    color: #f1f1f1;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .bhaag-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .bhaag-title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    display: inline-block;
+    border-bottom: 3px solid #f1c40f;
+    padding-bottom: 5px;
+  }
+
+  .glass-card-dark .bhaag-title {
+    color: #ffffff;
+  }
+
+  .bhaag-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    text-align: justify;
+    margin-bottom: 25px;
+  }
+
+  .glass-card-dark .bhaag-text {
+    color: #f1f1f1;
+  }
+
+  .bhaag-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .bhaag-list li {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  /* Custom List Markers */
+  .list-standard li::before { content: "🌿"; position: absolute; left: 0; top: 2px; }
+  .list-danger li::before { content: "🚫"; position: absolute; left: 0; top: 2px; }
+  .list-success li::before { content: "✅"; position: absolute; left: 0; top: 2px; }
+
+  .bhaag-note {
+    background: rgba(241, 196, 15, 0.15);
+    border-left: 4px solid #f1c40f;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 30px;
+  }
+
+  .glass-card-dark .bhaag-note {
+    background: rgba(0, 0, 0, 0.25);
+  }
+
+  .note-title {
+    font-weight: 600;
+    color: #d35400;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+  }
+
+  .glass-card-dark .note-title {
+    color: #ffd700;
+  }
+
+  .mantra-text {
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 2.2;
+    color: #2c3e50;
+    font-weight: 500;
+  }
+
+  .bhaag-divider {
+    height: 1px;
+    background: rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+  }
+
+  @media (max-width: 768px) {
+    .glass-card { padding: 25px; }
+    .bhaag-title { font-size: 2rem; }
+  }
+</style>
+
+<main id="main-content" class="bhaag-container">
+
+  <section id="bhag1" class="glass-card reveal">
+    <div class="bhaag-header">
+      <h2 class="bhaag-title">भाग - 1</h2>
     </div>
-  </div>
-</section> -->
-
-<!-- ══ BHAG 1 ══ -->
-<!-- <section class="bhag-section py-section" id="bhag1">
-  <div class="container">
-    <div class="bhag-header reveal"> -->
-      <!-- <div class="bh-num">भाग — १</div> -->
-      <!-- <h2 class="bh-title">प्रकृति को प्रणाम</h2> -->
-      <!-- <div class="bh-sub">मूल प्रकृति नियम</div> -->
-    <!-- </div> -->
-<!-- 
-    <div class="niyam-grid">
-      Rule 1
-      <div class="niyam-card big-card reveal" data-delay="0">
-        <div class="nc-num">नियम १</div>
-        <div class="nc-icon">☀️</div>
-        <h3 class="nc-title">सूर्य नमस्कार</h3>
-        <p class="nc-text">रोज सुबह और शाम को सुरज देवता को धन्यवाद भाव से प्रणाम करें और पुरी तरह झुकें कि हमारे हाथ पृथ्वी को छुएं।</p>
-         <div class="nc-tip">
-          <span>💡 लाभ:</span> सूर्य का प्रकाश विटामिन-D का प्राकृतिक स्रोत है। प्रणाम की मुद्रा रक्त परिसंचरण सुधारती है।
-        </div> -->
-      </div>
-      <!-- Rule 2 -->
-      <!-- <div class="niyam-card big-card reveal" data-delay="0.1">
-        <div class="nc-num">नियम २</div>
-        <div class="nc-icon">👨</div>
-        <h3 class="nc-title">पिता — सर्वोच्च गुरु</h3>
-        <p class="nc-text">पिता से बड़ा कोई गुरू नही होता। पिता शुरू से मरणोपरांत तक हमे देता ही जाता है। इसलिए पिता को अपना गुरू बनाएं और रोज सुबह और रात को सोने से पहले आदर भाव से प्रणाम करें और चरण स्पर्श करें। यदि पिता नही है तो पिता की याद में पृथ्वी का चरण स्पर्श करें।</p> -->
-        <!-- <div class="nc-note">यदि पिता नहीं है तो पिता की याद में पृथ्वी का चरण स्पर्श करें।</div> -->
-      </div>
-      <!-- Rule 3 -->
-      <!-- <div class="niyam-card reveal" data-delay="0.2">
-        <div class="nc-num">नियम ३</div>
-        <div class="nc-icon">👩</div>
-        <h3 class="nc-title">माता — जन्मदात्री</h3>
-        <p class="nc-text">माता जननी है, इसका ऋण हम कभी भी उतार नही सकते। इसलिए रोज सुबह और रात को सोने से पहले आदर भाव से माता के चरण स्पर्श करें।</p>
-      </div> -->
-      <!-- Rule 4 -->
-      <!-- <div class="niyam-card reveal" data-delay="0.3">
-        <div class="nc-num">नियम ४</div>
-        <div class="nc-icon">🌍</div>
-        <h3 class="nc-title">पृथ्वी माता</h3>
-        <p class="nc-text">पृथ्वी को सदैव धन्यवाद करें। सुबह और सोने से पहले पृथ्वी माता का आदर भाव से, चरण स्पर्श करें।</p> -->
-      </div>
-      <!-- Rule 5 -->
-      <!-- <div class="niyam-card reveal" data-delay="0.4">
-        <div class="nc-num">नियम ५</div>
-        <div class="nc-icon">🤲</div>
-        <h3 class="nc-title">निःस्वार्थ कर्म</h3>
-        <p class="nc-text">हमें रोज एक काम ऐसा करना चाहिए जिसके बदले में हमें कुछ भी ना मिले। जैसे पशुओं को खाना खिलाना, पाकों और सड़कों के किनारे पौधे लगाना इत्यादि।</p>
-      </div>
-    </div> -->
-
-    <!-- Special Note -->
-    <!-- <div class="special-note reveal">
-      <div class="sn-icon">📌</div>
-      <div class="sn-content">
-        <strong>विशेष नोट — महिलाओं के लिए:</strong>
-        <p>नारी ऊजंा शक्ति का प्रतीक है इसलिए वह गुरू धारण नहीं कर सकती, औरत/ नारी को सुबह और शाम को सूरज देवता की आदर भाव से झुक कर प्रणाम करें और धरती मां के चरण स्पर्श करें।</p>
-      </div>
-    </div> --> 
-
-    <!-- Full Part 1 Text -->
-    <!-- <div class="bhag-fulltext reveal">
-      <h3>भाग – 1 (पूरा पाठ)</h3>
-      <p>
-        हम शरीर, मन और आत्मा का संगम हैं। शरीर और मन को झुकाने हम चेतना, आत्मा के तल पर आ सकते हैं और खुद को जान सकते हैं। और दुखों से पार हो सकते हैं। अब सवाल यह उठता है कि शरीर और मन को कहां झुकाएं। शरीर और मन को हम वहां झुका सकते है जहां हम चाह कर भी कुछ भी ना दे सकें और हमारा अंहकार पैदा ना हो सके। जैसे सुरज, चांद, पृथ्वी, प्रकृति, माता–पिता, यह सब सदैव हमें देते ही रहते हैं, पर बदले में हम उन्हें कुछ भी नही दे सकते।
-      </p>
-
-      <h4 class="bf-subtitle">नियम:–</h4>
-      <ul class="bf-list">
-        <li>रोज सुबह और शाम को सुरज देवता को धन्यवाद भाव से प्रणाम करें और पुरी तरह झुकें कि हमारे हाथ पृथ्वी को छुएं।</li>
-        <li>पिता से बड़ा कोई गुरू नही होता। पिता शुरू से मरणोपरांत तक हमे देता ही जाता है। इसलिए पिता को अपना गुरू बनाएं और रोज सुबह और रात को सोने से पहले आदर भाव से प्रणाम करें और चरण स्पर्श करें। यदि पिता नही है तो पिता की याद में पृथ्वी का चरण स्पर्श करें।</li>
-        <li>माता जननी है, इसका ऋण हम कभी भी उतार नही सकते। इसलिए रोज सुबह और रात को सोने से पहले आदर भाव से माता के चरण स्पर्श करें।</li>
-        <li>पृथ्वी को सदैव धन्यवाद करें। सुबह और सोने से पहले पृथ्वी माता का आदर भाव से, चरण स्पर्श करें।</li>
-        <li>हमें रोज एक काम ऐसा करना चाहिए जिसके बदले में हमें कुछ भी ना मिले। जैसे पशुओं को खाना खिलाना, पाकों और सड़कों के किनारे पौधे लगाना इत्यादि।</li>
-      </ul>
-
-      <h4 class="bf-subtitle">नोट :–</h4>
-      <p>
-        नारी ऊजंा शक्ति का प्रतीक है इसलिए वह गुरू धारण नहीं कर सकती, औरत/ नारी को सुबह और शाम को सूरज देवता की आदर भाव से झुक कर प्रणाम करें और धरती मां के चरण स्पर्श करें।
-      </p>
-    </div>
-  </div>
-</section> -->
-
-
-<section style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 850px; margin: 30px auto; color: #333; line-height: 1.7;">
-  
-  <h1 style="font-size: 3rem; color: #2c3e50; text-align: center; margin-bottom: 40px; border-bottom: 4px solid #f1c40f; display: table; margin-left: auto; margin-right: auto; padding-bottom: 10px;">भाग - 1</h1>
-
-  <div class="bhag-fulltext reveal" style="padding: 30px; border: 1px solid #e0e0e0; border-radius: 12px; background-color: #ffffff; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
     
-    <h3 style="color: #2c3e50; font-size: 1.5rem; margin-bottom: 20px; border-left: 5px solid #27ae60; padding-left: 15px;">भाग – 1 (पूरा पाठ)</h3>
-    
-    <p style="font-size: 1.1rem; margin-bottom: 25px; text-align: justify;">
+    <h3 style="color: #27ae60; margin-bottom: 15px; font-size: 1.3rem;">परिचय (पूरा पाठ)</h3>
+    <p class="bhaag-text">
       हम शरीर, मन और आत्मा का संगम हैं। शरीर और मन को झुकाने हम चेतना, आत्मा के तल पर आ सकते हैं और खुद को जान सकते हैं। और दुखों से पार हो सकते हैं। अब सवाल यह उठता है कि शरीर और मन को कहां झुकाएं। शरीर और मन को हम वहां झुका सकते है जहां हम चाह कर भी कुछ भी ना दे सकें और हमारा अंहकार पैदा ना हो सके। जैसे सुरज, चांद, पृथ्वी, प्रकृति, माता–पिता, यह सब सदैव हमें देते ही रहते हैं, पर बदले में हम उन्हें कुछ भी नही दे सकते।
     </p>
 
-    <h4 class="bf-subtitle" style="color: #e67e22; font-size: 1.3rem; margin-top: 30px; margin-bottom: 20px; font-weight: bold;">नियम:–</h4>
-    
-    <ul class="bf-list" style="list-style-type: none; padding: 0;">
-      <li style="margin-bottom: 15px; padding-left: 35px; position: relative; font-size: 1.05rem;">
-        <span style="position: absolute; left: 0; color: #27ae60; font-weight: bold;">1.</span> 
-        रोज सुबह और शाम को सुरज देवता को धन्यवाद भाव से प्रणाम करें और पुरी तरह झुकें कि हमारे हाथ पृथ्वी को छुएं।
-      </li>
-      <li style="margin-bottom: 15px; padding-left: 35px; position: relative; font-size: 1.05rem;">
-        <span style="position: absolute; left: 0; color: #27ae60; font-weight: bold;">2.</span> 
-        पिता से बड़ा कोई गुरू नही होता। पिता शुरू से मरणोपरांत तक हमे देता ही जाता है। इसलिए पिता को अपना गुरू बनाएं और रोज सुबह और रात को सोने से पहले आदर भाव से प्रणाम करें और चरण स्पर्श करें। यदि पिता नही है तो पिता की याद में पृथ्वी का चरण स्पर्श करें।
-      </li>
-      <li style="margin-bottom: 15px; padding-left: 35px; position: relative; font-size: 1.05rem;">
-        <span style="position: absolute; left: 0; color: #27ae60; font-weight: bold;">3.</span> 
-        माता जननी है, इसका ऋण हम कभी भी उतार नही सकते। इसलिए रोज सुबह और रात को सोने से पहले आदर भाव से माता के चरण स्पर्श करें।
-      </li>
-      <li style="margin-bottom: 15px; padding-left: 35px; position: relative; font-size: 1.05rem;">
-        <span style="position: absolute; left: 0; color: #27ae60; font-weight: bold;">4.</span> 
-        पृथ्वी को सदैव धन्यवाद करें। सुबह और सोने से पहले पृथ्वी माता का आदर भाव से, चरण स्पर्श करें।
-      </li>
-      <li style="margin-bottom: 15px; padding-left: 35px; position: relative; font-size: 1.05rem;">
-        <span style="position: absolute; left: 0; color: #27ae60; font-weight: bold;">5.</span> 
-        हमें रोज एक काम ऐसा करना चाहिए जिसके बदले में हमें कुछ भी ना मिले। जैसे पशुओं को खाना खिलाना, पाकों और सड़कों के किनारे पौधे लगाना इत्यादि।
-      </li>
+    <h4 style="color: #e67e22; margin: 25px 0 15px 0; font-size: 1.2rem;">नियम:–</h4>
+    <ul class="bhaag-list list-standard">
+      <li>रोज सुबह और शाम को सुरज देवता को धन्यवाद भाव से प्रणाम करें और पुरी तरह झुकें कि हमारे हाथ पृथ्वी को छुएं।</li>
+      <li>पिता से बड़ा कोई गुरू नही होता। पिता शुरू से मरणोपरांत तक हमे देता ही जाता है। इसलिए पिता को अपना गुरू बनाएं और रोज सुबह और रात को सोने से पहले आदर भाव से प्रणाम करें और चरण स्पर्श करें। यदि पिता नही है तो पिता की याद में पृथ्वी का चरण स्पर्श करें।</li>
+      <li>माता जननी है, इसका ऋण हम कभी भी उतार नही सकते। इसलिए रोज सुबह और रात को सोने से पहले आदर भाव से माता के चरण स्पर्श करें।</li>
+      <li>पृथ्वी को सदैव धन्यवाद करें। सुबह और सोने से पहले पृथ्वी माता का आदर भाव से, चरण स्पर्श करें।</li>
+      <li>हमें रोज एक काम ऐसा करना चाहिए जिसके बदले में हमें कुछ भी ना मिले। जैसे पशुओं को खाना खिलाना, पाकों और सड़कों के किनारे पौधे लगाना इत्यादि।</li>
     </ul>
 
-    <div style="margin-top: 35px; padding: 20px; background-color: #fff9f1; border-radius: 8px; border-right: 5px solid #e67e22;">
-      <h4 class="bf-subtitle" style="color: #d35400; margin: 0 0 10px 0; font-size: 1.1rem; font-weight: bold;">नोट :–</h4>
-      <p style="margin: 0; font-style: italic; font-size: 1rem;">
-        नारी ऊजंा शक्ति का प्रतीक है इसलिए वह गुरू धारण नहीं कर सकती, औरत/ नारी को सुबह और शाम को सूरज देवता की आदर भाव से झुक कर प्रणाम करें और धरती मां के चरण स्पर्श करें।
-      </p>
+    <div class="bhaag-note">
+      <div class="note-title">नोट :–</div>
+      <p style="margin: 0; font-style: italic;">नारी ऊजंा शक्ति का प्रतीक है इसलिए वह गुरू धारण नहीं कर सकती, औरत/ नारी को सुबह और शाम को सूरज देवता की आदर भाव से झुक कर प्रणाम करें और धरती मां के चरण स्पर्श करें।</p>
     </div>
+  </section>
 
-  </div>
-</section>
-
-<!-- ══ BHAG 2 ══ -->
-<!-- <section class="bhag-section bhag-dark py-section" id="bhag2">
-  <div class="container">
-    <div class="bhag-header bhag-header-light reveal">
-      <div class="bh-num">भाग — २</div>
-      <h2 class="bh-title" style="color:white">समर्पण और स्वीकृति</h2>
-      <div class="bh-sub" style="color:rgba(255,255,255,0.6)">दुख से मुक्ति का सरल मार्ग</div>
+  <section id="bhag2" class="glass-card glass-card-dark reveal">
+    <div class="bhaag-header">
+      <h2 class="bhaag-title">भाग - 2</h2>
     </div>
-
-    <div class="bhag2-layout">
-      <div class="bhag2-text reveal-l">
-        <div class="b2-block">
-          <h3>दुख का कारण — पकड़</h3>
-          <p>हमारे जीवन मे दुख का मुख्य कारण पकड़ है। दुख पर पकड़ या सुख पर, अच्छे पर या बुरे पर, विचारों पर या परिस्थितियां पर, जब भी किसी चीज की अति होगी वो दुख पैदा करेगी। हम चाहकर भी इस पकड़ से या परिस्थिति से पार नहीं हो सकती और उलझते ही जाते हैं, जो अधिक दुख और परेशानी हमारे जीवन में पैदा करता है। बड़ा ही आसान तरीका है इस पकड़ से दूर होने का।</p>
-        </div>
-        <div class="b2-block">
-          <h3>समाधान — प्रकृति में समर्पण</h3>
-          <p>जब भी हमारे जीवन में कोई दुख, परेशानी, समस्या या डर या कोई बीमारी का डर सताए तो खुले आसमान में बाहर आ जाना और हाथ जोड़कर सीधे खड़े हो जाना। प्रकृति के सामने समपर्ण कर देना और बोलना, हे प्रकृति, परमात्मा, मैं तेरी शरण में हूं। मेरे जीवन में जो कुछ भी हो रहा है, वही मेरे लिए अच्छा है। मैं स्वीकरण करता हूं और इसी भाव से झुकते जाना कि आपके दोनों हाथ धरती को छुएं।</p>
-        </div>
-        <div class="b2-result">
-          <span>✅ परिणाम:</span> ऐसा करने से आप शांत हो जाओगे और एक रास्ता मिलेगा जो प्रकृति में आपके लिए बनाया है।
-        </div>
-      </div>
-      <div class="bhag2-visual reveal-r">
-        <div class="surrender-card">
-          <div class="sc-top">🙏</div>
-          <h3>समर्पण मंत्र</h3>
-          <p>"हे प्रकृति, परमात्मा,<br>मैं तेरी शरण में हूं।<br>मेरे जीवन में जो कुछ भी<br>हो रहा है, वही मेरे लिए<br>अच्छा है।<br>मैं स्वीकरण करता हूं।"</p>
-        </div>
-        <div class="bhag2-note reveal" data-delay="0.2">
-          <strong>⚠️ महत्वपूर्ण:</strong> यह विधि उन्हीं लोगों के लिए कारगर या लाभदायक है जो नेचर स्पिरिचुअल हेल्थ सेंटर में दिए गए प्रकृति के नियमों भाग–1 का पालन कर रहे हैं। क्योंकि जब तक आपके आपका प्रकृति के साथ लगाव नहीं हो जाता, तब आपके अंदर स्वीकार भाव का या समपर्ण का भाव पैदा नहीं हो सकता।
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<section 
-  id="bhag2"
-  style="
-    background: linear-gradient(135deg, #0f3d2e, #145c43);
-    padding: 70px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Segoe UI', sans-serif;
-  "
->
-  <div 
-    style="
-      max-width: 900px;
-      background: rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(12px);
-      border-radius: 18px;
-      padding: 40px;
-      box-shadow: 0 12px 35px rgba(0,0,0,0.35);
-    "
-  >
-
-    <!-- HEADING -->
-    <h2 
-      style="
-        color: #ffffff;
-        text-align: center;
-        font-size: 32px;
-        margin-bottom: 25px;
-        letter-spacing: 1px;
-      "
-    >
-      🌿 भाग 2
-    </h2>
-
-    <!-- CONTENT -->
-    <p 
-      style="
-        color: #f1f1f1;
-        font-size: 18px;
-        line-height: 2;
-        text-align: justify;
-        letter-spacing: 0.4px;
-      "
-    >
+    
+    <p class="bhaag-text">
       हमारे जीवन मे दुख का मुख्य कारण पकड़ है। दुख पर पकड़ या सुख पर, अच्छे पर या बुरे पर, विचारों पर या परिस्थितियों पर, जब भी किसी चीज की अति होगी वो दुख पैदा करेगी। हम चाहकर भी इस पकड़ से या परिस्थिति से पार नहीं हो सकती और उलझते ही जाते हैं, जो अधिक दुख और परेशानी हमारे जीवन में पैदा करता है। बड़ा ही आसान तरीका है इस पकड़ से दूर होने का।
-
-      <br><br>
-
-      जब भी हमारे जीवन में कोई दुख, परेशानी, समस्या या डर या कोई बीमारी का डर सताए तो खुले आसमान में बाहर आ जाना और हाथ जोड़कर सीधे खड़े हो जाना। प्रकृति के सामने समर्पण कर देना और बोलना, <span style="color:#ffd700;">हे प्रकृति, परमात्मा, मैं तेरी शरण में हूं।</span> मेरे जीवन में जो कुछ भी हो रहा है, वही मेरे लिए अच्छा है। मैं स्वीकरण करता हूं और इसी भाव से झुकते जाना कि आपके दोनों हाथ धरती को छुएं। ऐसा करने से आप शांत हो जाओगे और एक रास्ता मिलेगा जो प्रकृति में आपके लिए बनाया है।
+    </p>
+    <p class="bhaag-text">
+      जब भी हमारे जीवन में कोई दुख, परेशानी, समस्या या डर या कोई बीमारी का डर सताए तो खुले आसमान में बाहर आ जाना और हाथ जोड़कर सीधे खड़े हो जाना। प्रकृति के सामने समर्पण कर देना और बोलना, <span style="color:#ffd700; font-weight: 600;">हे प्रकृति, परमात्मा, मैं तेरी शरण में हूं।</span> मेरे जीवन में जो कुछ भी हो रहा है, वही मेरे लिए अच्छा है। मैं स्वीकरण करता हूं और इसी भाव से झुकते जाना कि आपके दोनों हाथ धरती को छुएं। ऐसा करने से आप शांत हो जाओगे और एक रास्ता मिलेगा जो प्रकृति में आपके लिए बनाया है।
     </p>
 
-    <!-- NOTE BOX -->
-    <div 
-      style="
-        margin-top: 30px;
-        padding: 20px;
-        background: rgba(0,0,0,0.25);
-        border-left: 4px solid #ffd700;
-        border-radius: 10px;
-      "
-    >
-      <p style="color:#f5f5f5; margin:0; line-height:1.8;">
-        <strong style="color:#ffd700;">नोट :-</strong><br>
-        यह विधि उन्हीं लोगों के लिए कारगर या लाभदायक है जो नेचर स्पिरिचुअल हेल्थ सेंटर में दिए गए प्रकृति के नियमों भाग-1 का पालन कर रहे हैं। क्योंकि जब तक आपके आपका प्रकृति के साथ लगाव नहीं हो जाता, तब आपके अंदर स्वीकार भाव का या समर्पण का भाव पैदा नहीं हो सकता।
-      </p>
+    <div class="bhaag-note">
+      <div class="note-title">नोट :–</div>
+      <p style="margin: 0; color: #f5f5f5;">यह विधि उन्हीं लोगों के लिए कारगर या लाभदायक है जो नेचर स्पिरिचुअल हेल्थ सेंटर में दिए गए प्रकृति के नियमों भाग-1 का पालन कर रहे हैं। क्योंकि जब तक आपके आपका प्रकृति के साथ लगाव नहीं हो जाता, तब आपके अंदर स्वीकार भाव का या समर्पण का भाव पैदा नहीं हो सकता।</p>
     </div>
+  </section>
 
-  </div>
-</section>
-<!-- ══ HARMFUL ══ -->
-<!-- <section class="harmful-section py-section" id="harmful">
-  <div class="container">
-    <div class="text-center reveal" style="margin-bottom:4rem">
-      <span class="section-label" style="color:#ff6b6b">हानिकारक पदार्थ व आदतें</span>
-      <h2 class="section-title">इनसे बचें — इन्हें त्यागें</h2>
-      <div class="divider center" style="background:linear-gradient(90deg,#e74c3c,#ff8e53)"></div>
-      <p class="section-desc center">ये पदार्थ और आदतें हमारे शरीर और जीवन के लिए अत्यंत हानिकारक हैं</p>
+  <section id="harmful" class="glass-card reveal">
+    <div class="bhaag-header">
+      <h2 class="bhaag-title">भाग - 3</h2>
     </div>
-    <div class="harmful-grid">
-      <div class="hc reveal" data-delay="0">
-        <div class="hc-icon">🍶</div>
-        <div class="hc-num">१</div>
-        <p>शराब/नशीले पदार्थ का सेवन</p>
-      </div>
-      <div class="hc reveal" data-delay="0.05">
-        <div class="hc-icon">🥩</div>
-        <div class="hc-num">२</div>
-        <p>मांस, अंडा आदि का सेवन</p>
-      </div>
-      <div class="hc reveal" data-delay="0.1">
-        <div class="hc-icon">🚬</div>
-        <div class="hc-num">३</div>
-        <p>बीड़ी, सिगरेट और तंबाकू आदि का सेवन</p>
-      </div>
-      <div class="hc reveal" data-delay="0.15">
-        <div class="hc-icon">🌙</div>
-        <div class="hc-num">४</div>
-        <p>शाम को सूर्य अस्त के बाद कुछ भी खाना और पीना</p>
-      </div>
-      <div class="hc reveal" data-delay="0.2">
-        <div class="hc-icon">🧈</div>
-        <div class="hc-num">५</div>
-        <p>पशु का दूध और उससे बनने वाले पदार्थ जैसे दही, मक्खन, पनीर, घी आदि का सेवन. सूर्य अस्त के बाद किसी भी इलेक्ट्रॉनिक आइटम को देखना या प्रयोग करना जैसे मोबाइल, टीबी आदि।</p>
-      </div>
-      <div class="hc reveal" data-delay="0.25">
-        <div class="hc-icon">🌃</div>
-        <div class="hc-num">६</div>
-        <p>रात को 8:00 पीएम के बाद घर से बाहर रहना</p>
-      </div>
-      <div class="hc reveal" data-delay="0.3">
-        <div class="hc-icon">🛋️</div>
-        <div class="hc-num">७</div>
-        <p>सूर्य उदय के बाद और सूर्यास्त से पहले लेटना या सोना</p>
-      </div>
-      <div class="hc reveal" data-delay="0.35">
-        <div class="hc-icon">🧊</div>
-        <div class="hc-num">८</div>
-        <p>फ्रीज में रखे पदार्थ सब्जी आदि का प्रयोग</p>
-      </div>
-    </div>
-  </div>
-</section> -->
-<section style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 20px auto; border: 1px solid #ddd; padding: 25px; border-radius: 10px; background-color: #fff;">
     
-    <h2 style="color: #2c3e50; border-bottom: 2px solid #27ae60; padding-bottom: 10px; text-align: center;">भाग - 3</h2>
+    <p class="bhaag-text" style="font-weight: 500;">
+      स्वस्थ शरीर ही होना खुशहाल जीवन के लिए अनिवार्य है। इसके बिना आप अच्छे ओर सुन्दर जीवन की कल्पना नहीं कर सकते हैं। अगर आप स्वस्थ हैं तो जीवन की सभी परिस्थिति का आंनद ले सकते हैं। सबसे पहले कौन-कौन सी वस्तुएं और पदार्थ हैं जो हमारे शरीर के लिए हानिकारक है जान लें &rarr;
+    </p>
+
+    <div style="background: rgba(231, 76, 60, 0.05); border: 1px solid rgba(231, 76, 60, 0.2); padding: 25px; border-radius: 16px; margin-bottom: 30px;">
+      <h4 style="color: #c0392b; margin-top: 0; margin-bottom: 15px; font-size: 1.2rem;">हानिकारक पदार्थ व आदतें:</h4>
+      <ul class="bhaag-list list-danger">
+        <li>शराब/नशीले पदार्थ का सेवन</li>
+        <li>मांस, अंडा आदि का सेवन,</li>
+        <li>बीड़ी, सिगरेट और तंबाकू आदि का सैवन</li>
+        <li>शाम को सूर्य अस्त के बाद कुछ भी खाना और पीना</li>
+        <li>पशु का दूध और उससे बनने वाले पदार्थ जैसे दही, मक्खन, पनीर, घी आदि का सेवन. सूर्य अस्त के बाद किसी भी इलेक्ट्रॉनिक आइटम को देखना या प्रयोग करना जैसे माबाइल, टीबी आदि।</li>
+        <li>रात को 8:00 पीएम के बाद घर से बाहर रहना,</li>
+        <li>सूर्य उदय के बाद और सूर्यास्त से पहले लेटना या सोना,</li>
+        <li>फ्रीज में रखे पदार्थ सब्जी आदि का प्रयोग।</li>
+      </ul>
+    </div>
+
+    <div class="bhaag-divider"></div>
+
+    <p class="bhaag-text" style="font-style: italic; text-align: center;">
+      प्रकृति ने हमें सुंदर शरीर प्रदान किया है। हमारा प्रथम कर्तव्य हैं की हम शरीर को हर अवस्था में स्वस्थ रखें और प्रकृति के नियमों का पालन करके हम अपने शरीर को स्वस्थ ओर ऊर्जावान सुन्दर बना सकते हैं।
+    </p>
+
+    <div style="background: rgba(39, 174, 96, 0.05); border: 1px solid rgba(39, 174, 96, 0.2); padding: 25px; border-radius: 16px;">
+      <h4 style="color: #27ae60; margin-top: 0; margin-bottom: 15px; font-size: 1.2rem;">स्वस्थ दिनचर्या:</h4>
+      <ul class="bhaag-list list-success">
+        <li>पानी सूर्य उदय से पहले लगभग 5:00 एएम के बीच लें</li>
+        <li>नहाना, सूर्य उदय से पहले</li>
+        <li>नाश्ता 9:00 से 10:00 के बीच</li>
+        <li>दोपहर का खाना 4:00 से 5:00 के बीच</li>
+        <li>पानी 6:00 बजे के पहले ही लें।</li>
+        <li>6:00 बजे के बाद कुछ भी ना खाएं और पिएं, पानी तक भी नहीं पीना।</li>
+        <li>सूर्य अस्त से पहले घर की और चल पड़े।</li>
+        <li>8 पीएम के करीब सो जाएं।</li>
+        <li>सुबह उठने के बाद शाम तक लेटे नहीं, बिना सहारे के बैठे</li>
+        <li>शाम के बाद विश्राम अवस्था में रहे बिना सहारे के लेटे</li>
+        <li>नंगे पैर सुबह और शाम को लगभग 10 मिनट चलें</li>
+        <li>शाम के खाने में एक प्लेट सलाद की जरूर खाएं।</li>
+        <li>सुबह और शाम को खाने मैं जूस, फूट और कुछ मीठा लें।</li>
+        <li>यदि दिन में पानी पीना ही है तो खाना खाने के बीच में पियें</li>
+        <li>दूध ओर दूध से बने पदार्थ जैसे दही, घी, दूध, मक्कन, पनीर का सेवन ना करें।</li>
+        <li>फ्रीज में रखे पदार्थ का सेवन ना करें।</li>
+        <li>सप्ताह में एक दिन घर पर रहें।</li>
+        <li>15 से 20 के अंदर ये बाद बाहर घूमने के लिए जरूर जाएं।</li>
+        <li>घर पर आने के बाद मोबाइल का प्रयोग ना करें।</li>
+        <li>जब भी कुछ खाना हो या पीना हो नीचे बैठकर खाएं व पिएं।</li>
+        <li>लेडीज खाना नीचे बैठकर बनाएं।</li>
+        <li>सप्ताह में एक बार सिर धोएं।</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="bhag4" class="glass-card reveal" style="text-align: center;">
+    <div class="bhaag-header">
+      <h2 class="bhaag-title">भाग - 4</h2>
+      <div style="color: #7f8c8d; margin-top: 10px; font-size: 1.1rem;">दिव्य आत्म-बोध मंत्र</div>
+    </div>
     
-    <p style="font-size: 1.1em; font-weight: 500;">स्वस्थ शरीर ही होना खुशहाल जीवन के लिए अनिवार्य है। इसके बिना आप अच्छे ओर सुन्दर जीवन की कल्पना नहीं कर सकते हैं। अगर आप स्वस्थ हैं तो जीवन की सभी परिस्थिति का आंनद ले सकते हैं। सबसे पहले कौन-कौन सी वस्तुएं और पदार्थ हैं जो हमारे शरीर के लिए हानिकारक है जान लें &rarr;</p>
+    <div style="color: #f1c40f; font-size: 1.5rem; margin-bottom: 20px;">✦ ✦ ✦</div>
+    <p class="mantra-text">
+      मैं ही हूं। मैं ही हूं。<br>
+      मैं ही सूरज, मैं ही चन्दा,<br>
+      मैं ही धरती हूं,<br>
+      मैं ही माता, मैं ही पिता,<br>
+      मैं ही सखा हूं, मैं ही है, मैं ही है。<br>
+      मैं आकाश, मैं ही पर्वत,<br>
+      मैं ही समुंदर हैं, मैं ही झरना, मैं ही पानी,<br>
+      मैं ही सितारा हूं,<br>
+      मैं ही राजा हूं, मैं ही राजा हूं। मैं ही राजा हूं。<br>
+      <strong style="color: #d35400;">इस दुनिया का मैं ही राजा हूं।</strong>
+    </p>
+    <div style="color: #27ae60; font-size: 1.5rem; margin-top: 20px;">🌿 🌸 🌿</div>
+  </section>
 
-    <div style="background-color: #fdf2f2; padding: 15px; border-left: 5px solid #e74c3c; margin-bottom: 20px;">
-        <ol style="margin: 0; padding-left: 20px;">
-            <li style="margin-bottom: 8px;">शराब/नशीले पदार्थ का सेवन</li>
-            <li style="margin-bottom: 8px;">मांस, अंडा आदि का सेवन,</li>
-            <li style="margin-bottom: 8px;">बीड़ी, सिगरेट और तंबाकू आदि का सैवन</li>
-            <li style="margin-bottom: 8px;">शाम को सूर्य अस्त के बाद कुछ भी खाना और पीना</li>
-            <li style="margin-bottom: 8px;">पशु का दूध और उससे बनने वाले पदार्थ जैसे दही, मक्खन, पनीर, घी आदि का सेवन. सूर्य अस्त के बाद किसी भी इलेक्ट्रॉनिक आइटम को देखना या प्रयोग करना जैसे माबाइल, टीबी आदि।</li>
-            <li style="margin-bottom: 8px;">रात को 8:00 पीएम के बाद घर से बाहर रहना,</li>
-            <li style="margin-bottom: 8px;">सूर्य उदय के बाद और सूर्यास्त से पहले लेटना या सोना,</li>
-            <li style="margin-bottom: 8px;">फ्रीज में रखे पदार्थ सब्जी आदि का प्रयोग।</li>
-        </ol>
-    </div>
-
-    <p style="font-style: italic; background: #f9f9f9; padding: 10px; border-radius: 5px;">प्रकृति ने हमें सुंदर शरीर प्रदान किया है। हमारा प्रथम कर्तव्य हैं की हम शरीर को हर अवस्था में स्वस्थ रखें और प्रकृति के नियमों का पालन करके हम अपने शरीर को स्वस्थ ओर ऊर्जावान सुन्दर बना सकते हैं</p>
-
-    <div style="background-color: #f2f9f4; padding: 15px; border-left: 5px solid #27ae60;">
-        <ol style="margin: 0; padding-left: 20px;">
-            <li style="margin-bottom: 8px;">पानी सूर्य उदय से पहले लगभग 5:00 एएम के बीच लें</li>
-            <li style="margin-bottom: 8px;">नहाना, सूर्य उदय से पहले</li>
-            <li style="margin-bottom: 8px;">नाश्ता 9:00 से 10:00 के बीच</li>
-            <li style="margin-bottom: 8px;">दोपहर का खाना 4:00 से 5:00 के बीच</li>
-            <li style="margin-bottom: 8px;">पानी 6:00 बजे के पहले ही लें।</li>
-            <li style="margin-bottom: 8px;">6:00 बजे के बाद कुछ भी ना खाएं और पिएं, पानी तक भी नहीं पीना।</li>
-            <li style="margin-bottom: 8px;">सूर्य अस्त से पहले घर की और चल पड़े।</li>
-            <li style="margin-bottom: 8px;">8 पीएम के करीब सो जाएं।</li>
-            <li style="margin-bottom: 8px;">सुबह उठने के बाद शाम तक लेटे नहीं, बिना सहारे के बैठे</li>
-            <li style="margin-bottom: 8px;">शाम के बाद विश्राम अवस्था में रहे बिना सहारे के लेटे</li>
-            <li style="margin-bottom: 8px;">नंगे पैर सुबह और शाम को लगभग 10 मिनट चलें</li>
-            <li style="margin-bottom: 8px;">शाम के खाने में एक प्लेट सलाद की जरूर खाएं।</li>
-            <li style="margin-bottom: 8px;">सुबह और शाम को खाने मैं जूस, फूट और कुछ मीठा लें।</li>
-            <li style="margin-bottom: 8px;">यदि दिन में पानी पीना ही है तो खाना खाने के बीच में पियें</li>
-            <li style="margin-bottom: 8px;">दूध ओर दूध से बने पदार्थ जैसे दही, घी, दूध, मक्कन, पनीर का सेवन ना करें।</li>
-            <li style="margin-bottom: 8px;">फ्रीज में रखे पदार्थ का सेवन ना करें।</li>
-            <li style="margin-bottom: 8px;">सप्ताह में एक दिन घर पर रहें।</li>
-            <li style="margin-bottom: 8px;">15 से 20 के अंदर ये बाद बाहर घूमने के लिए जरूर जाएं।</li>
-            <li style="margin-bottom: 8px;">घर पर आने के बाद मोबाइल का प्रयोग ना करें।</li>
-            <li style="margin-bottom: 8px;">जब भी कुछ खाना हो या पीना हो नीचे बैठकर खाएं व पिएं।</li>
-            <li style="margin-bottom: 8px;">लेडीज खाना नीचे बैठकर बनाएं।</li>
-            <li style="margin-bottom: 8px;">सप्ताह में एक बार सिर धोएं।</li>
-        </ol>
-    </div>
-</section>
-<!-- ══ BHAG 4 ══ -->
-<section class="mantra-section py-section" id="bhag4">
-  <div class="mantra-bg-glow"></div>
-  <div class="container">
-    <div class="text-center reveal" style="margin-bottom:3rem">
-      <div class="bh-num" style="color:var(--gold);margin:0 auto 0.5rem">भाग — ४</div>
-      <h2 class="section-title light">दिव्य आत्म-बोध मंत्र</h2>
-      <div class="divider center"></div>
-    </div>
-    <div class="mantra-layout">
-      <div class="mantra-card reveal-l">
-        <div class="mc-stars">✦ ✦ ✦</div>
-        <p class="mc-text">
-          मैं ही हूं। मैं ही हूं।<br>
-          मैं ही सूरज, मैं ही चन्दा,<br>
-          मैं ही धरती हूं,<br>
-          मैं ही माता, मैं ही पिता,<br>
-          मैं ही सखा हूं, मैं ही है, मैं ही है।<br>
-          मैं आकाश, मैं ही पर्वत,<br>
-          मैं ही समुंदर हैं, मैं ही झरना, मैं ही पानी,<br>
-          मैं ही सितारा हूं,<br>
-          मैं ही राजा हूं, मैं ही राजा हूं। मैं ही राजा हूं।<br>
-          <strong>इस दुनिया का मैं ही राजा हूं।</strong>
-        </p>
-        <div class="mc-stars">🌿 🌸 🌿</div>
-      </div>
-    </div>
-  </div>
-</section>
+</main>
 
 <!-- ══ CTA ══ -->
 <section style="background:var(--cream);padding:6rem 0;text-align:center">
@@ -463,7 +333,7 @@
       <p class="section-desc center" style="margin-bottom:2.5rem">आज ही पंजीकरण करें और प्रकृति के नियमों का पालन शुरू करें</p>
       <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
         <a href="contact.html"  class="btn btn-gold">पंजीकरण करें →</a>
-        <a href="dinchrya.html" class="btn btn-green">दिनचर्या देखें</a>
+        <!-- <a href="dinchrya.html" class="btn btn-green">दिनचर्या देखें</a> -->
       </div>
     </div>
   </div>
