@@ -36,6 +36,29 @@
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
   --transition: all 0.35s var(--ease-out);
+
+  /* Font Families */
+  --font-hindi: 'Tiro Devanagari Hindi', serif;
+  --font-display: 'Playfair Display', serif;
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-serif-italic: 'Cormorant Garamond', serif; /* Italic variant is handled by font-style */
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --section-py: 6rem;
+
+  /* Font Sizes */
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --heading-sm: 1.5rem;
+  --heading-md: 2rem;
+  --heading-lg: 3rem;
 }
 
 /* ── RESET ── */
@@ -44,7 +67,7 @@
 }
 html { scroll-behavior: smooth; font-size: 16px; }
 body {
-  font-family: 'Tiro Devanagari Hindi', serif;
+  font-family: var(--font-hindi);
   background: var(--cream);
   color: var(--text);
   overflow-x: hidden;
@@ -54,6 +77,23 @@ body {
 img { max-width: 100%; display: block; }
 a { text-decoration: none; }
 ul { list-style: none; }
+
+/* ── UTILITIES ── */
+.text-center { text-align: center; }
+.text-left   { text-align: left; }
+.text-right  { text-align: right; }
+
+.d-flex        { display: flex; }
+.justify-center{ justify-content: center; }
+.align-center  { align-items: center; }
+
+.mb-xs { margin-bottom: var(--space-xs); }
+.mb-sm { margin-bottom: var(--space-sm); }
+.mb-md { margin-bottom: var(--space-md); }
+.mb-lg { margin-bottom: var(--space-lg); }
+.mb-xl { margin-bottom: var(--space-xl); }
+
+.py-section { padding-top: var(--section-py); padding-bottom: var(--section-py); }
 
 /* ── CUSTOM CURSOR ── */
 #cursor {
@@ -90,7 +130,7 @@ body:has(button:hover) #cursor {
 #page-loader.hide { opacity: 0; visibility: hidden; pointer-events: none; }
 .loader-tree  { font-size: 4.5rem; animation: loaderBounce 0.9s ease-in-out infinite; }
 .loader-title { color: var(--gold); font-size: 1.3rem; letter-spacing: 3px; margin-top: 1rem;
-                font-family: 'Cormorant Garamond', serif; font-style: italic; }
+                font-family: var(--font-serif-italic); }
 .loader-bar   { width: 180px; height: 3px; background: rgba(255,255,255,0.1);
                 border-radius: 2px; margin-top: 1.2rem; overflow: hidden; }
 .loader-fill  { height: 100%; background: linear-gradient(90deg, var(--gold), var(--amber));
@@ -130,7 +170,7 @@ body:has(button:hover) #cursor {
 .nav-links .nav-a {
   color: rgba(255,255,255,0.78); padding: 0.45rem 1rem;
   border-radius: 30px; font-size: 0.88rem;
-  font-family: 'Cormorant Garamond', serif; letter-spacing: 0.5px;
+  font-family: var(--font-serif); letter-spacing: 0.5px;
   transition: var(--transition); position: relative;
 }
 .nav-links .nav-a::after {
@@ -148,7 +188,7 @@ body:has(button:hover) #cursor {
   color: var(--forest); padding: 0.55rem 1.4rem;
   border-radius: var(--radius-pill); font-weight: 700;
   font-size: 0.82rem; letter-spacing: 0.5px;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: var(--font-serif);
   transition: var(--transition);
   box-shadow: 0 4px 16px rgba(212,160,23,0.35);
 }
@@ -195,7 +235,7 @@ body:has(button:hover) #cursor {
 .footer-brand .fb-name  { font-size: 1.5rem; color: var(--gold); margin-bottom: 0.4rem; }
 .footer-brand .fb-tag   { font-size: 0.75rem; color: rgba(255,255,255,0.4); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 1.2rem; }
 .footer-brand .fb-desc  { font-size: 0.9rem; color: rgba(255,255,255,0.6); line-height: 1.9; }
-.footer-col h4 { color: var(--gold); font-size: 0.75rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 1.5rem; font-family: 'Cormorant Garamond', serif; }
+.footer-col h4 { color: var(--gold); font-size: 0.75rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 1.5rem; font-family: var(--font-serif); }
 .footer-col ul li { margin-bottom: 0.8rem; }
 .footer-col ul a { color: rgba(255,255,255,0.55); font-size: 0.9rem; transition: color 0.3s; }
 .footer-col ul a:hover { color: var(--gold); }
@@ -243,7 +283,7 @@ body:has(button:hover) #cursor {
 
 /* ── SHARED SECTION HELPERS ── */
 .section-label {
-  display: inline-block; font-family: 'Cormorant Garamond', serif; font-style: italic;
+  display: inline-block; font-family: var(--font-serif-italic);
   font-size: 0.85rem; letter-spacing: 4px; text-transform: uppercase;
   color: var(--leaf); margin-bottom: 0.8rem;
 }
@@ -251,7 +291,7 @@ body:has(button:hover) #cursor {
 .section-title {
   font-size: clamp(2rem, 3.5vw, 3.2rem);
   line-height: 1.2; margin-bottom: 1.2rem;
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display);
 }
 .section-title.light { color: var(--white); }
 .divider {
@@ -268,7 +308,7 @@ body:has(button:hover) #cursor {
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
   padding: 0.8rem 2.2rem; border-radius: var(--radius-pill);
-  font-size: 1rem; font-family: 'Tiro Devanagari Hindi', serif;
+  font-size: 1rem; font-family: var(--font-hindi);
   transition: var(--transition); cursor: none;
   border: none; font-weight: 600;
 }
@@ -317,18 +357,18 @@ body:has(button:hover) #cursor {
 .breadcrumb { display: flex; gap: 0.6rem; align-items: center; margin-bottom: 1.2rem; }
 .breadcrumb a, .breadcrumb span {
   font-size: 0.8rem; color: rgba(255,255,255,0.5); letter-spacing: 1px;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: var(--font-serif);
 }
 .breadcrumb a:hover { color: var(--gold); }
 .breadcrumb .sep { color: rgba(255,255,255,0.25); }
 .page-hero-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display);
   font-size: clamp(2.5rem, 6vw, 5rem);
   color: white; line-height: 1.1; margin-bottom: 1rem;
 }
 .page-hero-title .gold { color: var(--gold); }
 .page-hero-sub {
-  font-family: 'Cormorant Garamond', serif; font-style: italic;
+  font-family: var(--font-serif-italic);
   font-size: clamp(1rem, 2vw, 1.3rem); color: rgba(255,255,255,0.65);
   max-width: 600px;
 }

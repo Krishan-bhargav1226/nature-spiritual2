@@ -2,24 +2,121 @@
 
 /* QUICK NAV */
 .niyam-quicknav {
-  background: white; padding:1rem 0;
+  background: var(--white); padding:var(--space-sm) 0;
   border-bottom:1px solid rgba(74,175,80,0.12);
   position: sticky; top:65px; z-index:100;
-  box-shadow: 0 2px 12px rgba(13,74,30,0.06);
+  box-shadow: var(--shadow-sm);
 }
 .qn-inner {
-  display:flex; gap:1rem; align-items:center; flex-wrap:wrap;
+  display:flex; gap:var(--space-sm); align-items:center; flex-wrap:wrap;
   justify-content: center;
 }
 .qn-btn {
-  color:var(--text-mid); font-size:0.85rem; padding:0.4rem 1rem;
-  border-radius:100px; border:1px solid rgba(74,175,80,0.2);
-  transition:var(--transition); font-family:'Cormorant Garamond',serif;
+  color:var(--text-mid); font-size:0.85rem; padding:0.4rem var(--space-sm);
+  border-radius:var(--radius-pill); border:1px solid rgba(74,175,80,0.2);
+  transition:var(--transition); font-family:var(--font-serif);
 }
 .qn-btn:hover { background:var(--forest); color:var(--gold); border-color:var(--forest); }
 
 /* RESPONSIVE */
 @media(max-width:640px){
-  .qn-inner { gap:0.5rem; }
+  .qn-inner { gap:var(--space-xs); }
   .qn-btn { font-size:0.78rem; padding:0.35rem 0.8rem; }
+}
+
+
+
+
+
+/* ── MOBILE-OPTIMIZED APPLE CAROUSEL ── */
+.shorts-carousel-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 0; /* Flush to edges on mobile */
+  overflow: visible; 
+}
+
+.shorts-carousel {
+  display: flex;
+  gap: 1.2rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 1rem 1.5rem; /* Side padding creates the "start" offset */
+  
+  /* Hide scrollbars */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  
+  /* Performance boost for mobile */
+  -webkit-overflow-scrolling: touch; 
+}
+
+.shorts-carousel::-webkit-scrollbar { display: none; }
+
+.shorts-item {
+  flex: 0 0 auto;
+  /* DESKTOP: 280px | MOBILE: 72% of screen width so next video peeks in */
+  width: clamp(260px, 72vw, 300px); 
+  aspect-ratio: 9 / 16;
+  scroll-snap-align: center;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.4s cubic-bezier(0.2, 1, 0.2, 1);
+}
+
+.shorts-item iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  /* Prevents iframe from intercepting touch-swipes on mobile */
+  pointer-events: auto; 
+}
+
+/* ── NAVIGATION BUTTONS (DESKTOP ONLY) ── */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+/* ── MOBILE SPECIFIC TWEAKS ── */
+@media (max-width: 768px) {
+  /* Hide physical buttons on mobile - users prefer swiping */
+  .carousel-btn {
+    display: none;
+  }
+  
+  /* Ensure the mantra text doesn't get too wide */
+  .mantra-text {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+    line-height: 1.8;
+  }
+
+  .shorts-carousel {
+    gap: 1rem;
+    padding: 1rem 10vw; /* Centers the first item with a peek on both sides */
+  }
 }
